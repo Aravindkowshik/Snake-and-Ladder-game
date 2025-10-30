@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake and Ladders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div id="player">
+        <div id="displ"> <h1 id="who"></h1>
+         <div id="displayer"></div></div>
+         <div class="btns">
+         <button  disabled id="btn-1" onclick="rolldice('p1')">rolldice player1</button>
+         <button disabled id="btn-2" onclick="rolldice('p2')">rolldice player2</button>
+         </div>
+         <div class="colorselect">
+            <p>select the different colour to start game</p>
+            <div id="opt">
+             <div >
+                <label for="player1"> player 1 </label>
+               <select id="player1" name="colour">
+            
+                <option value="blue">blue</option>
+                <option value="red">red</option>
+                <option value="green"> green</option>
+                <option value="purple">purple</option>
+                 </select>
+              </div>
+              <div>
+                  <label for="player2"> player 2 </label>
+                   <select id="player2" name="colour">
+                    <option value="red">red</option>
+                     <option value="blue">blue</option>
+                    <option value="green"> green</option>
+                     <option value="purple">purple</option>
+                   </select>
+                    
+                </div>
+                </div>
+                
+         <div   class="er" id="0"> </div>
+         <button id="new" onclick="colorchanger()">Start game</button>
+         </div>
+
+
+     </div>
+    <div class="gamecontainer">
+            <div class="game" id="100"></div>
+            <div class="game" id="99"></div>
+            <div class="game" id="98"></div>
+            <div class="game" id="97"></div>
+            <div class="game" id="96"></div>
+            <div class="game" id="95"></div>
+            <div class="game" id="94"></div>
+            <div class="game" id="93"></div>
+            <div class="game" id="92"></div>
+            <div class="game" id="91"></div>
+            <div class="game" id="81"></div>
+            <div class="game" id="82"></div>
+            <div class="game" id="83"></div>
+            <div class="game" id="84"></div>
+            <div class="game" id="85"></div>
+            <div class="game" id="86"></div>
+            <div class="game" id="87"></div>
+            <div class="game" id="88"></div>
+            <div class="game" id="89"></div>
+            <div class="game" id="90"></div>
+            <div class="game" id="80"></div>
+            <div class="game" id="79"></div>
+            <div class="game" id="78"></div>
+            <div class="game" id="77"></div>
+            <div class="game" id="76"></div>
+            <div class="game" id="75"></div>
+            <div class="game" id="74"></div>
+            <div class="game" id="73"></div>
+            <div class="game" id="72"></div>
+            <div class="game" id="71"></div>
+            <div class="game" id="61"></div>
+            <div class="game" id="62"></div>
+            <div class="game" id="63"></div>
+            <div class="game" id="64"></div>
+            <div class="game" id="65"></div>
+            <div class="game" id="66"></div>
+            <div class="game" id="67"></div>
+            <div class="game" id="68"></div>
+            <div class="game" id="69"></div>
+            <div class="game" id="70"></div>
+            <div class="game" id="60"></div>
+            <div class="game" id="59"></div>
+            <div class="game" id="58"></div>
+            <div class="game" id="57"></div>
+            <div class="game" id="56"></div>
+            <div class="game" id="55"></div>
+            <div class="game" id="54"></div>
+            <div class="game" id="53"></div>
+            <div class="game" id="52"></div>
+            <div class="game" id="51"></div>
+            <div class="game" id="41"></div>
+            <div class="game" id="42"></div>
+            <div class="game" id="43"></div>
+            <div class="game" id="44"></div>
+            <div class="game" id="45"></div>
+            <div class="game" id="46"></div>
+            <div class="game" id="47"></div>
+            <div class="game" id="48"></div>
+            <div class="game" id="49"></div>
+            <div class="game" id="50"></div>
+            <div class="game" id="40"></div>
+            <div class="game" id="39"></div>
+            <div class="game" id="38"></div>
+            <div class="game" id="37"></div>
+            <div class="game" id="36"></div>
+            <div class="game" id="35"></div>
+            <div class="game" id="34"></div>
+            <div class="game" id="33"></div>
+            <div class="game" id="32"></div>
+            <div class="game" id="31"></div>
+            <div class="game" id="21"></div>
+            <div class="game" id="22"></div>
+            <div class="game" id="23"></div>
+            <div class="game" id="24"></div>
+            <div class="game" id="25"></div>
+            <div class="game" id="26"></div>
+            <div class="game" id="27"></div>
+            <div class="game" id="28"></div>
+            <div class="game" id="29"></div>
+            <div class="game" id="30"></div>
+            <div class="game" id="20"></div>
+            <div class="game" id="19"></div>
+            <div class="game" id="18"></div>
+            <div class="game" id="17"></div>
+            <div class="game" id="16"></div>
+            <div class="game" id="15"></div>
+            <div class="game" id="14"></div>
+            <div class="game" id="13"></div>
+            <div class="game" id="12"></div>
+            <div class="game" id="11"></div>
+            <div class="game" id="1"></div>
+            <div class="game" id="2"></div>
+            <div class="game" id="3"></div>
+            <div class="game" id="4"></div>
+            <div class="game" id="5"></div>
+            <div class="game" id="6"></div>
+            <div class="game" id="7"></div>
+            <div class="game" id="8"></div>
+            <div class="game" id="9"></div>
+            <div class="game" id="10"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
